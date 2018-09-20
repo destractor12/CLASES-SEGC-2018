@@ -27,3 +27,5 @@ void mostrarListado(eAlumno[], int tam);
 void inicializarAlumnos (eAlumno[], int tam, int);
 
 int buscarEspacio (eAlumno[], int);
+
+int borrarAlumno (eAlumno[], int);

@@ -20,6 +20,7 @@ int main()
         printf("\n====================\n");
         printf("1: CARGAR ALUMNO. \n");
         printf("2: MOSTRAR ALUMNOS. \n");
+        printf("3: BORRAR ALUMNOS. \n");
         printf("10: SALIR. \n");
         printf("====================\n");
 
@@ -43,6 +44,18 @@ int main()
                 mostrarListado(listaAlumnos, A);
             break;
 
+        case 3:
+                if(borrarAlumno(listaAlumnos, A))
+                {
+                    printf("\nDato encontrado.\n");
+                    printf("\nEl alumno se borro.\n");
+                }
+                else
+                {
+                    printf("\nEl alumno no se encontro.\n");
+                }
+
+            break;
         case 10:
                 printf("Programa finalizado! \n");
             break;

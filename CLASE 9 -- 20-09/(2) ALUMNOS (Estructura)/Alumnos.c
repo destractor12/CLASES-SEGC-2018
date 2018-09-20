@@ -98,3 +98,24 @@ int buscarEspacio (eAlumno listado[], int tam)
 
     return indice;
 }
+
+int borrarAlumno (eAlumno listado[], int tam)
+{
+    int legajo;
+    int i;
+    int encontro = 0;
+    printf("Ingrese el legajo: ");
+    scanf("%d", &legajo);
+
+    for (i=0; i<tam; i++)
+    {
+        if (legajo == listado[i].legajo && listado[i].estado == 1)
+        {
+            listado[i].estado = -1;
+            encontro = 1;
+            break;
+        }
+    }
+
+    return encontro;
+}
